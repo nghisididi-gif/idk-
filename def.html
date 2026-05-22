@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CyberSocitys - D0XX1N9</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#0a0a0a;
+    color:#ffffff;
+
+    font-family:'Orbitron',sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+
+    overflow-x:hidden;
+
+    /* dark grid background */
+    background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+    background-size:35px 35px;
+}
+
+/* container */
+
+.container{
+
+    width:100%;
+    max-width:950px;
+
+    background:#111111;
+
+    border:1px solid #222;
+
+    border-radius:18px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.45);
+}
+
+/* logos */
+
+.logo-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:35px;
+}
+
+.logo{
+
+    width:190px;
+    height:190px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid #2a2a2a;
+
+    transition:.3s;
+}
+
+.logo:hover{
+    transform:scale(1.03);
+}
+
+/* title */
+
+.title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:18px;
+}
+
+.red{
+    color:#d63b3b;
+}
+
+/* line */
+
+.line{
+
+    width:120px;
+    height:2px;
+
+    background:#333;
+
+    margin:20px auto 30px auto;
+}
+
+/* description */
+
+.description{
+
+    color:#bdbdbd;
+
+    font-size:14px;
+
+    line-height:1.9;
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+/* terminal */
+
+.terminal{
+
+    margin-top:40px;
+
+    background:#0b0b0b;
+
+    border:1px solid #222;
+
+    border-radius:12px;
+
+    padding:22px;
+
+    text-align:left;
+
+    color:#d0d0d0;
+
+    box-shadow:
+        inset 0 0 10px rgba(255,255,255,0.02);
+}
+
+.green{
+    color:#7ed957;
+}
+
+.redtxt{
+    color:#d63b3b;
+}
+
+/* blinking cursor */
+
+.blink{
+    animation:blink 1s infinite;
+}
+
+@keyframes blink{
+
+    0%{
+        opacity:1;
+    }
+
+    50%{
+        opacity:0;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+
+/* footer */
+
+.footer{
+
+    margin-top:35px;
+
+    color:#777;
+
+    font-size:13px;
+
+    line-height:2;
+}
+
+.footer a{
+
+    color:#cfcfcf;
+
+    text-decoration:none;
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+    .title{
+        font-size:30px;
+    }
+
+    .logo{
+
+        width:140px;
+        height:140px;
+    }
+
+    .description{
+        font-size:13px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGOS -->
+    <div class="logo-wrapper">
+
+        <img
+            src="https://raw.githubusercontent.com/nghisididi-gif/idk-/main/cybersocitys.jpg"
+            class="logo"
+            alt="CyberSocitys"
+        >
+
+        <img
+            src="https://raw.githubusercontent.com/nghisididi-gif/idk-/main/doxxing.jpg"
+            class="logo"
+            alt="D0XX1N9"
+        >
+
+    </div>
+
+    <!-- TITLE -->
+    <h1 class="title">
+
+        Cyber<span class="red">Socitys</span>
+        -
+        D0XX<span class="red">1N9</span>
+
+    </h1>
+
+    <div class="line"></div>
+
+    <!-- DESCRIPTION -->
+    <p class="description">
+
+        CyberSocitys - D0XX1N9 Was Here
+
+        <br><br>
+
+        SYSTEM ACTIVE • ROOT PRIVILEGES • ACCESS VERIFIED
+
+    </p>
+
+    <!-- TERMINAL -->
+    <div class="terminal">
+
+<pre style="margin:0; white-space:pre-wrap; line-height:1.8; font-family:Consolas, monospace;">
+
+<span class="green">cybersocity@server ~ $</span> <span class="redtxt">su</span>
+<span style="color:white;">[sudo] password for root:</span>
+
+<span class="green">root@server #</span> <span class="redtxt">id</span>
+<span style="color:white;">uid=0(root) gid=0(root) groups=0(root)</span>
+
+<span class="green">root@server #</span> <span class="redtxt">echo "done!"<span class="blink">_</span></span>
+
+</pre>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        CONTACT :
+        <a href="#">
+            CYBERSOCITYS
+        </a>
+
+        <br>
+
+        © 2026 CyberSocitys - D0XX1N9
+
+    </div>
+
+</div>
+
+</body>
+</html>
